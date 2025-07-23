@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Centre Admission Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .header-logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      margin: 10px 0 5px;
+      font-size: 22px;
+      color: #1a237e;
+    }
+
+    .header-text p {
+      font-size: 14px;
+      color: #666;
+      margin: 5px 0;
+
+    }
+
+    .campus-label {
+      display: inline-block;
+      background-color: #1565c0;
+      color: white;
+      padding: 5px 12px;
+      margin: 15px 0;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .radio-group {
+      margin-top: 10px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+      margin-right: 20px;
+    }
+
+    .signature-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .signature-group input {
+      width: 100%;
+    }
+
+    .submit-btn {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .submit-btn button {
+      background-color: #1a237e;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn button:hover {
+      background-color: #0d47a1;
+    }
+
+    @media screen and (max-width: 600px) {
+      .form-container {
+        padding: 20px;
+      }
+
+      .header-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header-text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+
+    <!-- Header with logo and center-aligned text -->
+    <div class="header-row">
+      <div class="header-logo">
+        <img src="c:\Users\TOSHIBA\Downloads\ChatGPT Image Jul 23, 2025, 01_21_46 PM.png" alt="Logo" />
+      </div>
+      <div class="header-text">
+        <h1>KHIDMAT-E-KHALQ VOCATIONAL TRAINING INSTITUTE</h1>
+        <p>A Project of Kutchi Kumbhar Khidmat-e-Khalq Welfare Association</p>
+        <p>New Kumbhar Wara St. No. 2, Lyari, Karachi South</p>
+        <p>Contact: +923038124443, +923332287998</p>
+        <div class="campus-label">Haji Ali Muhammad Usta Bhudda Campus 4</div>
+      </div>
+    </div>
+
+    <!-- Admission Form -->
+    <form>
+      <label>Form No:</label>
+      <input type="text" name="formNo" />
+
+      <label>Date:</label>
+      <input type="date" name="date" />
+
+      <label>Name of Applicant:</label>
+      <input type="text" name="applicantName" />
+
+      <label>Father Name:</label>
+      <input type="text" name="fatherName" />
+
+      <label>Academic Qualification:</label>
+      <input type="text" name="qualification" />
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" />
+
+      <label>Guardian Name:</label>
+      <input type="text" name="guardian" />
+
+      <label>WhatsApp Number:</label>
+      <input type="text" name="whatsapp" />
+
+      <label>Address:</label>
+      <textarea name="address" rows="2"></textarea>
+
+      <label>Shift:</label>
+      <input type="text" name="shift" />
+
+      <label>Timing:</label>
+      <input type="text" name="timing" />
+
+      <label>Fee:</label>
+      <input type="text" name="fee" />
+
+      <label>Course:</label>
+      <input type="text" name="course" />
+
+      <label>1. How would you rate your English language skills?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="english" value="Beginner" /> Beginner</label>
+        <label><input type="radio" name="english" value="Intermediate" /> Intermediate</label>
+        <label><input type="radio" name="english" value="Advance" /> Advance</label>
+        <label><input type="radio" name="english" value="Fluent" /> Fluent</label>
+      </div>
+
+      <label>2. Have you ever attended any computer institute?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="attended" value="Yes" /> Yes</label>
+        <label><input type="radio" name="attended" value="No" /> No</label>
+      </div>
+
+      <label>If yes, which courses or skills did you learn there?</label>
+      <textarea name="skills" rows="2"></textarea>
+
+      <label>3. Share a short 3-line bio:</label>
+      <textarea name="bio" rows="3"></textarea>
+
+      <label>Signature of Student:</label>
+      <input type="text" name="studentSign" />
+
+      <label>H.O.D Signature:</label>
+      <input type="text" name="hodSign" />
+
+      <div class="submit-btn">
+        <button type="submit">Submit Form</button>
+      </div>
+    </form>
+
+  </div>
+
+</body>
+</html>
